@@ -43,7 +43,7 @@ if (string.startsWith('D')){
 }
 else {
   return false
-}
+} 
 }
 
 const dNames =function (names){
@@ -53,15 +53,14 @@ const dNames =function (names){
  
 const isTriStateArea=function(strings){
 
- if (strings.endsWith('NJ','NY','CT')){
+ return (strings.endsWith('NJ') || strings.endsWith('NY') || strings.endsWith('CT'))
 
-  return true
- }
-else{
-  return false 
 }
- 
-} 
+
+const triStateAreaOnly= function(strings){
+
+  return strings.filter(isTriStateArea)
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
