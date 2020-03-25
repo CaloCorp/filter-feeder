@@ -61,6 +61,24 @@ const triStateAreaOnly= function(strings){
 
   return strings.filter(isTriStateArea)
 }
+
+const containsLowercase =function (str){
+
+  const aBCs= 'abcdefghijklmnopqrstuvwxyz';
+
+  for (const letter of str){
+    if (aBCs.includes(letter)){
+      return true;
+    }
+  }
+return false
+}
+
+const removeTrolls = function(strings){
+
+  return strings.filter(containsLowercase)
+}
+
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
