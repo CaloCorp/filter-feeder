@@ -2,8 +2,66 @@
  * YOUR CODE HERE *
  ******************/
 
+const isOdd =function(num){
 
+  return (num % 2 !==0)
+}
 
+const onlyOdds = function(num){
+
+  return num.filter(isOdd)
+}
+
+const isEven = function (num){
+
+  return (num % 2 === 0)
+}
+
+const onlyEvens = function(num){
+
+  return num.filter(isEven)
+}
+
+const isShort = function(string)
+{
+
+  if (string.length < 7){
+    return true
+  }
+else {
+  return false
+}
+}
+const shortNamesOnly= function (string){
+
+  return string.filter(isShort)
+}
+const isDName = function (string){
+
+if (string.startsWith('D')){
+  return true
+}
+else {
+  return false
+}
+}
+
+const dNames =function (names){
+
+  return names.filter(isDName)
+}
+ 
+const isTriStateArea=function(strings){
+
+ if (strings.endsWith('NJ','NY','CT')){
+
+  return true
+ }
+else{
+  return false 
+}
+ 
+} 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
